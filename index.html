@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+body{
+margin:0;
+
+
+}
+header{
+    /*Risolvere problema scrolbar orizzontale*/
+    margin-top:3rem;
+    padding-left: 5rem;
+    padding-right: 25rem;
+    margin-left:2rem;
+    margin-right:2rem;
+    padding-bottom:2rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+header a{
+    margin-left:3rem;
+    color:black;
+    text-decoration:none;
+    font-size:20pt;
+    position: relative;
+    padding-bottom:10px;
+}
+#link a:hover{
+    color: #928469;
+}
+#link a::after{
+    content: "";         
+    position: absolute;
+    left: 0;
+    bottom: 0;          
+    width: 0;             
+    height: 3px;          
+    background-color: #928469;
+    transition: width 0.3s ease; 
+}
+#link a:hover::after{
+    width:100%;
+}
+
+#container-home-img{
+    position:relative;
+    
+}
+#container-home-img img{
+    position:relative;
+    filter: blur(3px);
+}
+#text{
+    position:absolute;
+    top:20%;
+    left:25%;
+    font-size:50pt;
+    color:white;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+    word-wrap: break-word;
+}
+
+#container-recensioni{
+    margin-top:10rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom:15rem;
+    
+
+}
+.recensioni{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-style:italic;
+    font-size:1.1rem;
+    width:18rem;
+    height:21rem;
+    border-radius:15px;
+    border: 2px solid #928469;
+    
+    
+
+}
+
+.container-img-recensioni{
+display: flex;
+justify-content: center;
+margin-bottom:2rem;
+}
+
+.recensioni img{
+    padding-top:1rem;
+    width:15rem;
+}
+
+footer{
+    width:100%;
+    height:25rem;
+    border: 2px solid black;
+    background-color: #928469;
+    padding-top:1rem;
+    padding-left:2rem;
+
+}
+
+
+
+
+
+#container-contatti-titolo{
+    color: white;
+    font-size: 25pt;
+
+}
+#container-contatti-testo{
+    color:white;
+    font-size: 12pt;;
+
+}
+</style>
+</head>
+<body>
+
+<header>
+    <img src="images (1).png" width="250rem" height="auto">
+    <div id="link">
+        <a href="#">Home</a>
+        <a href="#">Chi siamo</a>
+        <a href="#">Servizi</a>
+        <a href="#">Contatti</a>
+    </div>
+
+</header>
+
+
+
+<article>
+    <div id="container-home-img">
+        <img src="img3.jpg" width="100%" height="auto">
+        <h1 id="text">Da oltre 10 anni nelle case dei milanesi</h1>
+    </div>
+    <div id="container-recensioni">
+        <div class="recensioni">
+            <div class="container-img-recensioni">
+                <img src="recensioni.jpg">
+            </div> 
+                <p>Dopo una notte di inferno la mia tapparella ha ceduto e ho chiamato subito Archedil... 
+                Alle 10.00 sono subito usciti e risolto il problema. Due interventi in due giorni (ieri per un problema idraulico) 
+                insomma menomale che ci sono... Professionali e onesti. Servizio immediato.. Grazie! </p>
+        </div>
+        <div class="recensioni">
+            <div class="container-img-recensioni">
+                <img src="recensioni.jpg">
+            </div>
+            <p>Ho avuto modo di poter collaborare con Andrea e la sua attività.
+                Un servizio di qualità con abbondante conoscenza sul proprio campo.
+                Sono specialisti nelle Ristrutturazioni Chiavi in Mano a Milano.
+                Consigliato.</p>
+        </div>
+        <div class="recensioni">
+            <div class="container-img-recensioni">
+                <img src="recensioni.jpg">
+            </div>
+            <p>Problema idraulico perfettamente risolto grazie alla professionalità e alla rapidità 
+                di intervento di questa impresa. Servizio di qualità, personale preparato e cordiale. 
+                Consigliato</p>
+        </div>
+    </div>
+</article>
+
+
+<footer>
+    <div id="container-contatti">
+        <div id="container-contatti-titolo">
+            <h2>Vieni a trovarci</h2>
+        </div>
+        <div id="container-contatti-testo">
+            <p>Via Giuseppe Govone 26, 20155 Milano MI</p>
+            <p>Telefono: 3406822974</p>
+            <p>email: archedil.milano@gmail.com</p>
+            <p>partita iva:</p>
+
+
+
+
+        </div>
+
+    </div>
+
+</footer>
+    
+
+
+
+<script>
+
+
+</script>
+</body>
+</html>
