@@ -6,14 +6,8 @@
     <title>Archedil</title>
 <style>
 body{
-margin:0;
-
-    
+margin:0;  
     font-family: 'Merriweather', serif;
-
-
-
-
 }
 header{
     /*Risolvere problema scrolbar orizzontale*/
@@ -88,7 +82,25 @@ article{
     text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
     word-wrap: break-word;
 }
-
+#container-home-img button{
+    position:absolute;
+    bottom:23%;
+    left: 40%;
+    right: 40%;
+    width:20%;
+    height:22%;
+    background-color: #928469;
+    color:white;
+    font-size: 40pt;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+}
+#container-home-img button:hover{
+    background-color: white;
+    color:#928469;
+    font-weight: bold;
+}
 #container-recensioni{
     margin-top:10%;
     display: flex;
@@ -106,9 +118,6 @@ article{
     height:21rem;
     border-radius:15px;
     border: 2px solid #928469;
-    
-    
-
 }
 
 .container-img-recensioni{
@@ -190,13 +199,21 @@ article{
 }
 #text{
     
-    top:30%;
+    top:25%;
     left:20%;
     font-size:30pt;
     text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
     
 }
-
+#container-home-img button{
+    
+    bottom:10%;
+    left: 38%;
+    right: 38%;
+    width:24%;
+    height:22%;
+    font-size: 18pt;
+}
 #container-recensioni{
     margin-top:10%;
     margin-bottom:15%;
@@ -306,12 +323,20 @@ article{
 #text{
     
     top:20%;
-    left:18%;
+    left:15%;
     font-size:30ptpt;
     text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
     
 }
-
+#container-home-img button{
+    
+    bottom:10%;
+    left: 35%;
+    right: 35%;
+    width:30%;
+    height:23%;
+    font-size: 15pt;
+}
 #container-recensioni{
     margin-top:15%;
     margin-bottom:20%;
@@ -392,6 +417,7 @@ footer{
     <div id="container-home-img">
         <img src="img3.jpg">
         <h1 id="text">Da oltre 10 anni nelle case dei milanesi</h1>
+        <button onClick="prev();">Richiedi un preventivo</button>
     </div>
     <div id="container-recensioni">
         <div class="recensioni">
